@@ -112,10 +112,8 @@ img {
   color: #404bbf;
 }
 
-.hero-container {
-  padding: 188px 0;
-}
 .hero-section {
+  padding: 188px 0;
   background: #2e2f42;
 }
 .hero-title {
@@ -131,8 +129,9 @@ img {
 }
 .order-button {
   display: block;
+  padding: 16px 32px;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
@@ -142,14 +141,13 @@ img {
   background-color: #4d5ae5;
   cursor: pointer;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
 }
-.advantage-section {
+.advantage-section .container {
   padding: 120px 0;
 }
 .advantage-title {
@@ -167,14 +165,11 @@ img {
 
 .advantage-list {
   display: flex;
+  gap: 24px;
 }
 
 .advantage-item {
-  width: 264px;
-  margin-right: 24px;
-}
-.advantage-item:last-child {
-  margin-right: 0;
+  width: calc((100% - 72px) / 4);
 }
 
 .advantage-subtitle {
@@ -205,19 +200,16 @@ img {
 }
 .team-list {
   display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .team-item {
   background-color: #fff;
-  margin-right: 24px;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
+  width: calc((100% - 3 * 24px) / 4);
 }
-.team-item:last-child {
-  margin-right: 0;
-}
+
 .team-text-container {
   margin: 32px 16px;
 }
@@ -239,11 +231,9 @@ img {
 }
 .portfolio-section {
   background-color: #fff;
-}
-
-.portfolio-container {
   padding: 120px 0;
 }
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -258,11 +248,11 @@ img {
   row-gap: 48px;
   column-gap: 24px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .portfolio-item {
   background-color: #fff;
-  width: 360px;
-  height: 420px;
+  width: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-text-container {
   border-bottom: 1px solid #e7e9fc;

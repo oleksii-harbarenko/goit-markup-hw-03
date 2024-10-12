@@ -147,7 +147,7 @@ img {
 .order-button:focus {
   background-color: #404bbf;
 }
-.advantage-section .container {
+.advantage-section {
   padding: 120px 0;
 }
 .advantage-title {
@@ -277,10 +277,9 @@ img {
 
 .page-footer {
   background-color: #2e2f42;
-}
-.footer-container {
   padding: 100px 0;
 }
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
